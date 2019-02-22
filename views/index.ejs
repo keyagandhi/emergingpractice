@@ -1,0 +1,99 @@
+<% include ./partials/header.ejs %>
+
+<% if (title == "Home") { %>
+<div class="container">
+    <div class="jumbotron">
+      <h1 class="display-4">Welcome to my Personal Portfolio</h1>
+      <p>Smile, It Cost's Nothing :) </p>
+      <P>Spread Happiness all around</P>
+        
+        <a class="btn btn-primary" href="/about" role="button">About</a>
+    </div>
+  </div>
+  <% } %>
+
+  <% if (title == "About") { %>
+    <div class="container">
+        <div class="jumbotron">
+            Keya Gandhi <br><br>
+            <img src="pic.png" width="250" height="300"><br>
+            I am studying Software Engineering Technology in Centennial college.
+            <br><a class="btn btn-primary" href="KeyaResume.pdf" role="button">More</a>
+        </div>
+      </div>
+      <% } %>
+
+      <% if (title == "Projects") { %>
+        <div class="container">
+            <div class="jumbotron">
+                Project Samples <br><br>
+                1. Asset tracking system <br><br>
+                <img src="asset.PNG" width="250" height="300">
+                 <br><br>
+                2. Android app<br><br>
+                <img src="collegeimg.png" width="250" height="300">
+                <br><br>
+                3. Data Mining<br><br>
+                <img src="mining.PNG" width="250" height="300">
+                <br><br>
+            </div>
+          </div>
+          <% } %>
+
+          <% if (title == "Services") { %>
+            <div class="container">
+                <div class="jumbotron">
+                   Services  <br><br>
+
+                    Web development <br><br>
+                    <img src="web.png" width="250" height="300"><br><br><br>
+                    Android Application<br><br>
+                    <img src="a.png" width="250" height="300"><br><br><br>
+                   Game Programming <br><br>
+                   <img src="game.png" width="250" height="300"><br>
+                </div>
+              </div>
+              <% } %>
+
+
+              <% if (title == "Contact") { %>
+                <div class="container">
+                    <div class="jumbotron">
+                        Contact Info <br><br>
+                        <div class="panel panel-primary" style="border: 3px solid palegreen">
+                            <div class="panel-header">
+                            </div>
+                            <div class="panel-body">
+                                Email: keyagandhi@gmail.com  <br>
+                                Phone: 1234567890
+                                </div>
+                                </div></div>
+
+                                <form action="">
+                                    <div class="container">
+                                    
+                                      <p>Enter your contact information</p>
+                                      <hr>
+                                  
+                                      <label for="fname"><b>Name</b></label>
+                                      <input type="text" placeholder="Enter Full Name" name="fname" required><br>
+                                  
+                                      <label for="email"><b>Email</b></label>
+                                      <input type="text" placeholder="Enter Email" name="email" required><br>
+                                  
+                                      <label for="contact"><b>Contact</b></label>
+                                      <input type="text" placeholder="Enter contact Number" name="contact" required><br>
+                                      
+                                      <br><label for="message"><b>Message</b></label>
+                                      <textarea type="text" placeholder="Enter a message" name="message" required></textarea><br>
+                                      <hr>
+                                  
+                                      <a role="button" type="submit" class="btn btn-primary" href="/">Share</a>
+                                    </div>
+                                  
+                                  
+                    </div>
+                  </div>
+                  <% } %>
+
+<% include ./partials/footer.ejs %>
